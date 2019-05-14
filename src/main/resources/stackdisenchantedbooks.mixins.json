@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.insanj.stackdisenchantedbooks.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "minVersion": "0.7.11",
+  "mixins": [
+    "MixinGrindstoneContainer"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

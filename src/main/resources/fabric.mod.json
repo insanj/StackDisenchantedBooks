@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "stackdisenchantedbooks",
+  "name": "Stack Disenchanted Books",
+  "description": "Fix grindstone mechanic where enchanted books become unstackable with normal books in 1.14",
+  "version": "${version}",
+
+  "authors": [
+    {
+     "name": "Julian (insanj) Weiss",
+      "contact": {
+        "email": "me@insanj.com",
+        "homepage": "https://insanj.github.io/stackdisenchantedbooks/",
+        "issues": "https://github.com/insanj/stackdisenchantedbooks/issues",
+        "sources": "https://github.com/insanj/stackdisenchantedbooks/"
+      }
+    }
+  ],
+  "license": "MIT",
+  "contact": {
+    "email": "me@insanj.com",
+    "homepage": "https://insanj.github.io/stackdisenchantedbooks/",
+    "issues": "https://github.com/insanj/stackdisenchantedbooks/issues",
+    "sources": "https://github.com/insanj/stackdisenchantedbooks/"
+  },
+  "icon": "assets/stackdisenchantedbooks/icon.png",
+
+  "environment": "*",
+  "depends": {
+    "fabric": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  },
+  "mixins": [
+    "stackdisenchantedbooks.mixins.json"
+  ]
+}
