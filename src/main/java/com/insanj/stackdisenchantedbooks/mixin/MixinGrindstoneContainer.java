@@ -22,15 +22,14 @@ import net.minecraft.container.ContainerType;
 import java.lang.reflect.Field;
 import org.apache.commons.lang3.reflect.FieldUtils;
 
-@Mixin(Container.class)
+@Mixin(GrindstoneContainer.class)
 public class MixinGrindstoneContainer {
-	@Inject(at = @At("RETURN"), method="onSlotClick", cancellable = true)
-	public void onSlotClick(int slotId, int clickData, SlotActionType action, PlayerEntity player, CallbackInfoReturnable ci) {
-		if ((Container)(Object)this instanceof GrindstoneContainer) {
-			ItemStack stack = (ItemStack)ci.getReturnValue();
-			if (stack != null && stack.getItem() instanceof EnchantedBookItem) {
-				ci.setReturnValue(new ItemStack(new BookItem(new BookItem.Settings())));
-			}
+	@Inject(at = @At("RETURN"), method="grind", cancellable=true)
+	public void grind(ItemStack item, int damage, int amount, CallbackInfoReturnable ci) {
+		ItemStack value = (ItemStack)ci.getReturnValue();
+		if (value != null && value.getItem() instanceof BookItem) {
+			value.removeSubTag("display");
+			ci.setReturnValue(value);
 		}
 	}
 }
