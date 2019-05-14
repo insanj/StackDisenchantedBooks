@@ -1,8 +1,15 @@
 # StackDisenchantedBooks
 
-Fix grindstone mechanic where enchanted books become unstackable with normal books in 1.14
+ 📚 Fix grindstone mechanic where enchanted books become unstackable with normal books in 1.14 (tested on Pre-Release 2).
 
-Forked from [ASH - Another Simple HUD with FPS count and coordinates](https://github.com/umollu/ash).
+![2019-05-14_02 50 56](https://user-images.githubusercontent.com/951011/57676828-6f84fd00-75f3-11e9-8151-759580a73f79.png)
+
+## What It Was Like Before (if you don't know):
+
+![2019-05-14_02 58 38](https://user-images.githubusercontent.com/951011/57677322-8a0ba600-75f4-11e9-85f7-89fc3be8bdef.png)
+
+
+> Forked from [ASH - Another Simple HUD with FPS count and coordinates](https://github.com/umollu/ash).
 
 ## License
 
